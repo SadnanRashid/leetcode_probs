@@ -6,13 +6,15 @@ var lengthOfLongestSubstring = function (s) {
     if (flag[s[i]] > start) {
       start = flag[s[i]];
     }
+    console.log(flag[s[i]]);
     flag[s[i]] = i;
     maxLen = Math.max(maxLen, i - start);
   }
+  console.log(flag);
   return maxLen;
 };
 
-console.log(lengthOfLongestSubstring("bbbbb"));
+console.log(lengthOfLongestSubstring("abcabcbb"));
 
 // Input: s = "abcabcbb"
 // Output: 3
