@@ -18,11 +18,12 @@ var trap = function (height) {
     if (height[height.length - i] <= tempRight) {
       right = tempRight;
       tempRight = right;
+      console.log(tempRight);
     } else {
       right = height[height.length - i];
       tempRight = right;
     }
-    console.log(right, height[height.length - i]);
+    // console.log(right, height[height.length - i]);
   }
 };
 
